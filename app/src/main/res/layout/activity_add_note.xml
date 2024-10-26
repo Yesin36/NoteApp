@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_16dp"
+    tools:context=".AddNoteActivity">
+
+
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Add Note."
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_24sp" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_alignParentTop="@id/addNoteHeading"
+        android:layout_marginEnd="@dimen/_6dp"/>
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60dp"
+        android:layout_below="@id/addNoteHeading"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:background="@drawable/orange_boarder"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter the title"
+        android:maxLines="1"
+        android:padding="@dimen/_12dp"
+        android:textSize="@dimen/_20sp" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:background="@drawable/orange_boarder"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter the discription"
+        android:padding="@dimen/_12dp"
+        android:textSize="@dimen/_18sp" />
+
+
+
+
+</RelativeLayout>
